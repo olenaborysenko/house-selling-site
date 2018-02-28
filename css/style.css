@@ -256,4 +256,34 @@ body {
 
 .footer {
   background-color: #101D2C;
-  grid-column: full-start / full-end; }
+  grid-column: full-start / full-end;
+  padding: 8rem; }
+
+.nav {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 2rem;
+  align-items: center; }
+  .nav__link:link, .nav__link:visited {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #FFF;
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    padding: 1.5rem;
+    transition: all .2s; }
+  .nav__link:hover, .nav__link:active {
+    background: rgba(255, 255, 255, 0.05);
+    transform: translateY(-3px); }
+
+.copyright {
+  font-size: 1.4rem;
+  color: #AAA;
+  text-align: center;
+  margin-top: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%; }
